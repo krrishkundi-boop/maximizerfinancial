@@ -1,6 +1,8 @@
-Here is the complete, updated `style.css` code for the **White Theme**. 
+Viewed style.css:1-584
 
-You can copy this entire block and paste it into the `style.css` file on your GitHub repository to update the live website:
+Here is the absolute latest, complete **`style.css`** code with all the mobile responsive layout fixes for the new image we just added. 
+
+Copy and paste this into your GitHub to update your live CSS:
 
 ```css
 :root {
@@ -184,10 +186,39 @@ h1, h2, h3, .logo {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.85));
 }
 
-.hero-content {
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    gap: 50px;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.floating-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
 .hero h1 {
@@ -552,6 +583,7 @@ footer {
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.5rem; }
+    .hero-flex { flex-direction: column; text-align: center; margin-top: 60px; }
     .about-flex { flex-direction: column; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-content { flex-direction: column; gap: 20px; }
