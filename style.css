@@ -1,8 +1,3 @@
-Viewed style.css:1-718
-
-Here is the complete code for your `style.css` file:
-
-```css
 :root {
     /* Light Theme Color Palette */
     --primary: #ffffff;
@@ -720,4 +715,3 @@ footer {
     .contact-grid { grid-template-columns: 1fr; }
     .footer-content { flex-direction: column; gap: 20px; }
 }
-```
