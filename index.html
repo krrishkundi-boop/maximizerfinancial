@@ -18,70 +18,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="container">
+    <!-- Header Area -->
+    <header id="top-header">
+        <div class="container header-flex">
             <div class="logo">
-                <span class="accent">MAX</span>IMIZER FINANCIAL SERVICES
+                <img src="logo.png.png" alt="Maximizer Financial Services" class="logo-img">
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li class="has-dropdown">
-                    <a href="index.html#services">Services <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="ca-services.html">CA Services</a></li>
-                        <li><a href="itr-filing.html">ITR Filing</a></li>
-                        <li><a href="mutual-funds.html">Mutual Funds</a></li>
-                        <li><a href="insurance.html">Insurance</a></li>
-                        <li><a href="pan-card.html">PAN Card</a></li>
-                        <li><a href="tax-planning.html">Tax Planning</a></li>
-                    </ul>
-                </li>
-                <li><a href="partners.html">Partners</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
+            <div class="header-info">
+                <div class="info-block">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <span class="info-label">SEND US A MESSAGE</span>
+                        <span class="info-value">manoj.dhiman@maximizerfinancialservices.com</span>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <span class="info-label">ADDRESS</span>
+                        <span class="info-value">1456-D, Street No-13, Govindpuri, Kalkaji, New Delhi, Delhi 110019</span>
+                    </div>
+                </div>
+                <a href="tel:+919811056448" class="header-btn">+91-9811056448 <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
-    </nav>
+    </header>
+
+    <!-- Main Navigation -->
+    <div class="nav-wrapper">
+        <nav id="main-nav">
+            <div class="container nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html#about">ABOUT US</a></li>
+                    <li class="has-dropdown">
+                        <a href="index.html#services">SERVICES <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ca-services.html">CA Services</a></li>
+                            <li><a href="itr-filing.html">ITR Filing</a></li>
+                            <li><a href="mutual-funds.html">Mutual Funds</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                            <li><a href="pan-card.html">PAN Card</a></li>
+                            <li><a href="tax-planning.html">Tax Planning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="partners.html">PARTNERS</a></li>
+                    <li><a href="index.html#contact">CONTACT US</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
-        <div class="container hero-flex">
-            <div class="hero-text">
-                <h1 class="fade-in">Maximizing Your <span class="text-gradient">Financial Growth</span></h1>
-                <p class="fade-in-delayed">Expert financial planning and tax solutions by Manoj Kumar Dhiman. 17 years of experience in maximizing your wealth potential.</p>
-                <div class="hero-btns fade-in-delayed">
-                    <a href="#services" class="btn btn-primary">Explore Services</a>
-                    <a href="#contact" class="btn btn-outline">Free Consultation</a>
-                </div>
-            </div>
-            <div class="hero-image fade-in-delayed">
-                <img src="hero_illustration.png" alt="Financial Growth Illustration" class="floating-image">
+        <div class="container hero-content">
+            <div class="hero-label">EXPERT FINANCIAL ADVISORY</div>
+            <h1 class="fade-in">Building the Financial Backbone for <br>India's Growth</h1>
+            <p class="fade-in-delayed">Maximizer Financial Services is a dedicated firm delivering high-quality financial infrastructure and tax strategies with discipline and control. Designed to support business growth and compliance in India's rapidly expanding economy.</p>
+            <div class="hero-btns fade-in-delayed">
+                <a href="#contact" class="btn btn-primary" style="background: var(--accent); color: white; border: none;">Start Consultation</a>
+                <a href="#services" class="btn btn-outline" style="color: white; border-color: white;">Explore Services</a>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container grid-stats">
-            <div class="stat-item">
-                <h3>17+</h3>
-                <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-                <h3>1000+</h3>
-                <p>Clients Served</p>
-            </div>
-            <div class="stat-item">
-                <h3>100%</h3>
-                <p>Compliance</p>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Services Section -->
     <section id="services" class="services">
@@ -131,17 +136,58 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Section Classic -->
+    <section id="about" class="about-classic">
         <div class="container about-flex">
+            <!-- Left Column -->
             <div class="about-content">
-                <h2>Excellence in <span class="accent">Finance Since 2007</span></h2>
+                <h2>Excellence in <span class="gold-text">Finance</span><br><span class="gold-text">Since 2007</span></h2>
                 <p>Founded by Manoj Kumar Dhiman, Maximizer Financial Services has emerged as a leader in financial advisory. With 17 years of experience, we provide professional insights that work in your interest.</p>
                 <p>We see investments from your perspective, ensuring every decision aligns with your long-term goals.</p>
-                <a href="#contact" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-outline-gold">Learn More</a>
             </div>
-            <div class="about-image">
-                <img src="about.png" alt="Professional Office" style="width: 100%; border-radius: 4px; border: 1px solid var(--gold); box-shadow: var(--shadow);">
+            
+            <!-- Right Column -->
+            <div class="about-image-classic">
+                <img src="founder_pro.png" alt="Manoj Kumar Dhiman" class="main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- New Stats Banner -->
+    <section class="stats-banner">
+        <div class="container stats-grid-new">
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="stat-info">
+                    <h3>17+</h3>
+                    <h4>Years of Experience</h4>
+                    <p>Delivering trusted financial advisory</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-info">
+                    <h3>500+</h3>
+                    <h4>Happy Clients</h4>
+                    <p>Long-term relationships built on trust</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fas fa-chart-bar"></i></div>
+                <div class="stat-info">
+                    <h3>1000+</h3>
+                    <h4>Financial Plans</h4>
+                    <p>Tailored strategies for every goal</p>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                <div class="stat-info">
+                    <h3>Proven Expertise</h3>
+                    <h4>Excellence in tax, investment</h4>
+                    <p>& financial planning</p>
+                </div>
             </div>
         </div>
     </section>
@@ -159,11 +205,11 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <span>helpdesk@maximizerfinancialservices.com</span>
+                        <span>manoj.dhiman@maximizerfinancialservices.com</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Govindpuri Kalkaji, New Delhi-110019</span>
+                        <span>1456-D, Street No-13, Govindpuri, Kalkaji, New Delhi, Delhi 110019</span>
                     </div>
                 </div>
                 <div class="contact-form-container">
@@ -191,7 +237,7 @@
             <div class="footer-info">
                 <p>&copy; 2024-2025 Maximizer Financial Services. All Rights Reserved.</p>
                 <p style="font-size: 0.8rem; margin-top: 10px; color: var(--text-muted);">
-                    <i class="fas fa-map-marker-alt"></i> Govindpuri Kalkaji, New Delhi-110019 | <i class="fas fa-phone"></i> +91-9811056448
+                    <i class="fas fa-map-marker-alt"></i> 1456-D, Street No-13, Govindpuri, Kalkaji, New Delhi, Delhi 110019 | <i class="fas fa-phone"></i> +91-9811056448
                 </p>
             </div>
             <div class="social-links">
@@ -230,3 +276,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
